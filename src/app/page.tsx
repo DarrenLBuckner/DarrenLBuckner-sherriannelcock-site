@@ -54,7 +54,7 @@ export default function Home() {
               Watch on YouTube
             </a>
             <a
-              href="https://guyanahomehub.com"
+              href="https://www.guyanahomehub.com/agents/sherriann-elcock"
               {...externalProps}
               className="text-soft-text transition hover:text-emerald-primary"
             >
@@ -100,7 +100,7 @@ export default function Home() {
                   Watch on YouTube
                 </a>
                 <a
-                  href="https://guyanahomehub.com"
+                  href="https://www.guyanahomehub.com/agents/sherriann-elcock"
                   {...externalProps}
                   className="text-base font-semibold text-emerald-primary transition hover:text-emerald-dark"
                 >
@@ -223,7 +223,7 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <a
-              href="https://guyanahomehub.com"
+              href="https://www.guyanahomehub.com/agents/sherriann-elcock"
               {...externalProps}
               className="inline-flex items-center justify-center rounded-md bg-gold-accent px-6 py-3 text-base font-bold text-white transition hover:opacity-90"
             >
@@ -265,7 +265,7 @@ export default function Home() {
             <li className="flex items-center gap-3">
               <span aria-hidden="true">🌐</span>
               <a
-                href="https://guyanahomehub.com"
+                href="https://www.guyanahomehub.com/agents/sherriann-elcock"
                 {...externalProps}
                 className="text-emerald-primary transition hover:text-emerald-dark"
               >

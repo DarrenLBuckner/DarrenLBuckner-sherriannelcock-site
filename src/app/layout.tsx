@@ -43,7 +43,7 @@ const personSchema = {
   sameAs: [
     "https://www.youtube.com/@SherriannElcock",
     "https://www.linkedin.com/in/sherriannelcock",
-    "https://guyanahomehub.com/agents/sherriann-elcock-martin",
+    "https://www.guyanahomehub.com/agents/sherriann-elcock",
     "https://sherriannelcock.com",
   ],
   worksFor: {
