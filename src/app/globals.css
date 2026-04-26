@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-emerald-primary: #059669;
+  --color-emerald-dark: #047857;
+  --color-emerald-light: #d1fae5;
+  --color-gold-accent: #d97706;
+  --color-near-black: #111827;
+  --color-body-text: #1f2937;
+  --color-soft-text: #374151;
+  --color-rule: #d1d5db;
+  --color-page: #f9fafb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-body-text);
+}

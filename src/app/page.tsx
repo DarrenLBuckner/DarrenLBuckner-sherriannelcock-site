@@ -1,0 +1,301 @@
+const externalProps = {
+  target: "_blank",
+  rel: "noopener noreferrer",
+} as const;
+
+const credentials = [
+  {
+    icon: "🏢",
+    label: "Company",
+    value: "Prestigious Services & Realty 1262",
+  },
+  {
+    icon: "📍",
+    label: "Primary Markets",
+    value: "Georgetown, East Bank Demerara, Linden, Region 3",
+  },
+  {
+    icon: "🤝",
+    label: "Transactions",
+    value: "50+ across career",
+  },
+  {
+    icon: "🏠",
+    label: "Specialties",
+    value: "Land, Apartment Buildings, Rentals, Corporate Relocation",
+  },
+  {
+    icon: "🎙️",
+    label: "Content",
+    value: "YouTube — @SherriannElcock | Guyana Real Estate",
+  },
+  {
+    icon: "🌟",
+    label: "Platform Role",
+    value: "Founding Advisor — Guyana HomeHub",
+  },
+];
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-page text-body-text">
+      {/* NAV */}
+      <nav className="border-b border-rule bg-page">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+          <span className="text-2xl font-bold tracking-tight text-emerald-primary">
+            SE
+          </span>
+          <div className="flex items-center gap-6 text-sm font-medium">
+            <a
+              href="https://www.youtube.com/@SherriannElcock"
+              {...externalProps}
+              className="text-soft-text transition hover:text-emerald-primary"
+            >
+              Watch on YouTube
+            </a>
+            <a
+              href="https://guyanahomehub.com"
+              {...externalProps}
+              className="text-soft-text transition hover:text-emerald-primary"
+            >
+              View Listings
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <div className="order-2 md:order-1">
+              <p className="text-xs font-semibold uppercase tracking-widest text-emerald-primary">
+                Founding Advisor, Guyana HomeHub · Guyana Real Estate
+              </p>
+              <h1 className="mt-4 text-4xl font-bold tracking-tight text-near-black md:text-5xl lg:text-6xl">
+                Sherriann Elcock
+              </h1>
+              <p className="mt-4 text-lg text-soft-text md:text-xl">
+                Real estate professional. Founder, Prestigious Services &amp;
+                Realty 1262. Georgetown, Guyana.
+              </p>
+              <p className="mt-6 text-base leading-relaxed text-body-text">
+                Sherriann Elcock is a Guyanese real estate professional
+                and the founder of Prestigious Services &amp; Realty 1262,
+                operating across Georgetown, East Bank Demerara, Linden, and
+                surrounding regions. She is a Founding Advisor to Guyana
+                HomeHub — the real estate search platform built by US
+                entrepreneur Darren L. Buckner to bring structure, transparency,
+                and trust to property transactions in Guyana. Guyana HomeHub is
+                the first verified, structured property marketplace in the
+                country, built to connect diaspora buyers in New York, Toronto,
+                and London with real listings and licensed agents on the ground.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-6">
+                <a
+                  href="https://www.youtube.com/@SherriannElcock"
+                  {...externalProps}
+                  className="inline-flex items-center justify-center rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
+                >
+                  Watch on YouTube
+                </a>
+                <a
+                  href="https://guyanahomehub.com"
+                  {...externalProps}
+                  className="text-base font-semibold text-emerald-primary transition hover:text-emerald-dark"
+                >
+                  View Listings →
+                </a>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="flex aspect-[4/5] w-full items-center justify-center rounded-lg border border-rule bg-emerald-light text-soft-text">
+                <span className="text-sm font-medium">Photo coming soon.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section className="border-b border-rule">
+        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+          <h2 className="text-3xl font-bold tracking-tight text-near-black md:text-4xl">
+            Real Estate. Real Talk.
+          </h2>
+          <div className="mt-8 space-y-6 text-base leading-relaxed text-body-text md:text-lg">
+            <p>
+              Before the transactions, before the listings, before the titles —
+              I&apos;m God-fearing, and I try my utmost best to be transparent.
+              Three P&apos;s have guided my entire career: Positivity. Pureness.
+              Professionalism. I never wanted to be rich. My success is helping
+              every client find what they&apos;re looking for — whether I have
+              the property or I collaborate with another agent.
+            </p>
+            <p>
+              I founded Prestigious Services &amp; Realty 1262 and have built my
+              reputation across more than 50 transactions spanning residential
+              sales, land, apartment buildings, rentals, and corporate
+              relocation. My regions are Region 3, Regent Street, Upper East
+              Bank Demerara, and Linden. I work with local buyers, returning
+              diaspora, and corporate clients who need someone on the ground
+              they can actually trust.
+            </p>
+            <p>
+              In 2026 I became a Founding Advisor to Guyana HomeHub — the
+              platform built to solve the trust problem that has always existed
+              in Guyanese real estate. No more Facebook chaos. No more
+              disappearing agents. Just verified listings, licensed
+              professionals, and a platform built for how people actually buy
+              and rent property today. I believe in what this platform is doing
+              for Guyana, and I am proud to be part of it from the beginning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CREDENTIALS */}
+      <section className="border-b border-rule">
+        <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
+          <h2 className="text-3xl font-bold tracking-tight text-near-black md:text-4xl">
+            Experience &amp; Background
+          </h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {credentials.map((card) => (
+              <div
+                key={card.label}
+                className="flex items-start gap-4 rounded-lg border border-rule bg-white p-6"
+              >
+                <span className="text-2xl" aria-hidden="true">
+                  {card.icon}
+                </span>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-emerald-primary">
+                    {card.label}
+                  </p>
+                  <p className="mt-1 text-base font-medium text-near-black">
+                    {card.value}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* YOUTUBE */}
+      <section className="bg-near-black text-white">
+        <div className="mx-auto max-w-3xl px-6 py-16 text-center md:py-24">
+          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            Guyana Real Estate — On YouTube
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-gray-300 md:text-lg">
+            Follow along for real talk about buying, renting, and investing in
+            Guyana. No fluff. Just honest insights from someone who has been in
+            this market for years.
+          </p>
+          <div className="mt-8">
+            <a
+              href="https://www.youtube.com/@SherriannElcock"
+              {...externalProps}
+              className="inline-flex items-center justify-center rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
+            >
+              Subscribe on YouTube
+            </a>
+          </div>
+          <p className="mt-4 text-sm text-gray-400">
+            @SherriannElcock | Guyana Real Estate
+          </p>
+        </div>
+      </section>
+
+      {/* PLATFORM LINK */}
+      <section className="border-b border-rule bg-emerald-light">
+        <div className="mx-auto max-w-3xl px-6 py-16 text-center md:py-24">
+          <h2 className="text-3xl font-bold tracking-tight text-near-black md:text-4xl">
+            Find Properties on Guyana HomeHub
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-body-text md:text-lg">
+            Every listing I carry is live on Guyana HomeHub — the only
+            structured, verified real estate platform in Guyana. Browse
+            residential properties, land, and rentals across Georgetown and
+            beyond. Built for buyers at home and across the diaspora.
+          </p>
+          <div className="mt-8">
+            <a
+              href="https://guyanahomehub.com"
+              {...externalProps}
+              className="inline-flex items-center justify-center rounded-md bg-gold-accent px-6 py-3 text-base font-bold text-white transition hover:opacity-90"
+            >
+              Browse Listings
+            </a>
+          </div>
+          <p className="mt-4 text-sm text-soft-text">
+            Guyana HomeHub — built and operated by Caribbean HomeHub LLC,
+            founded by Darren L. Buckner. portalhomehub.com
+          </p>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="border-b border-rule">
+        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+          <h2 className="text-3xl font-bold tracking-tight text-near-black md:text-4xl">
+            Get in Touch
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-body-text md:text-lg">
+            If you are looking to buy, rent, or invest in Guyana — reach out. I
+            work with every client personally.
+          </p>
+          <ul className="mt-8 space-y-3 text-base text-body-text">
+            <li className="flex items-center gap-3">
+              <span aria-hidden="true">📍</span>
+              <span>Georgetown, Guyana</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span aria-hidden="true">🎥</span>
+              <a
+                href="https://www.youtube.com/@SherriannElcock"
+                {...externalProps}
+                className="text-emerald-primary transition hover:text-emerald-dark"
+              >
+                youtube.com/@SherriannElcock
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <span aria-hidden="true">🌐</span>
+              <a
+                href="https://guyanahomehub.com"
+                {...externalProps}
+                className="text-emerald-primary transition hover:text-emerald-dark"
+              >
+                guyanahomehub.com
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <span aria-hidden="true">💼</span>
+              <a
+                href="https://www.linkedin.com/in/sherriannelcock"
+                {...externalProps}
+                className="text-emerald-primary transition hover:text-emerald-dark"
+              >
+                linkedin.com/in/sherriannelcock
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-page">
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-6 py-8 text-xs text-soft-text md:flex-row md:items-center">
+          <p>
+            © 2026 Sherriann Elcock. Site built and hosted by Caribbean
+            HomeHub LLC.
+          </p>
+          <p>guyanahomehub.com | portalhomehub.com</p>
+        </div>
+      </footer>
+    </main>
+  );
+}
