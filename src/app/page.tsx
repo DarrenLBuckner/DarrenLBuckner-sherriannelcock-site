@@ -60,6 +60,12 @@ export default function Home() {
             >
               View Listings
             </a>
+            <a
+              href="#contact"
+              className="text-soft-text transition hover:text-emerald-primary"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </nav>
@@ -238,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section className="border-b border-rule">
+      <section id="contact" className="border-b border-rule">
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
           <h2 className="text-3xl font-bold tracking-tight text-near-black md:text-4xl">
             Get in Touch
@@ -256,6 +262,15 @@ export default function Home() {
               >
                 <span aria-hidden="true">💬</span>
                 WhatsApp Sherriann
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:sherriann@sherriannelcock.com"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
+              >
+                <span aria-hidden="true">✉️</span>
+                Email Sherriann
               </a>
             </li>
             <li className="flex items-center gap-3">
