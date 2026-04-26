@@ -248,6 +248,16 @@ export default function Home() {
             work with every client personally.
           </p>
           <ul className="mt-8 space-y-3 text-base text-body-text">
+            <li>
+              <a
+                href="https://wa.me/5926821262?text=Hi%20Sherriann%2C%20I%20found%20you%20on%20sherriannelcock.com%20and%20I%27d%20like%20to%20discuss%20a%20property."
+                {...externalProps}
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
+              >
+                <span aria-hidden="true">💬</span>
+                WhatsApp Sherriann
+              </a>
+            </li>
             <li className="flex items-center gap-3">
               <span aria-hidden="true">📍</span>
               <span>Georgetown, Guyana</span>
