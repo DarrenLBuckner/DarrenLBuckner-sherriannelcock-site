@@ -142,8 +142,8 @@ export default function Home() {
               I founded Prestigious Services &amp; Realty 1262 and have built my
               reputation across more than 50 transactions spanning residential
               sales, land, apartment buildings, rentals, and corporate
-              relocation. My regions are Region 3, Upper East Bank Demerara,
-              and Linden. I work with local buyers, returning
+              relocation. My regions are Region 3, West Bank, Upper East Bank
+              Demerara, and Linden. I work with local buyers, returning
               diaspora, and corporate clients who need someone on the ground
               they can actually trust.
             </p>
