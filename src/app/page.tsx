@@ -7,7 +7,7 @@ const credentials = [
   {
     icon: "🏢",
     label: "Company",
-    value: "Prestigious Services & Realty 1262",
+    value: "Prestigious Services & Realty",
   },
   {
     icon: "📍",
@@ -76,26 +76,30 @@ export default function Home() {
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div className="order-2 md:order-1">
               <p className="text-xs font-semibold uppercase tracking-widest text-emerald-primary">
-                Founding Advisor, Guyana HomeHub · Guyana Real Estate
+                Guyana Real Estate Professional · Georgetown, Guyana
               </p>
               <h1 className="mt-4 text-4xl font-bold tracking-tight text-near-black md:text-5xl lg:text-6xl">
                 Sherriann Elcock
               </h1>
               <p className="mt-4 text-lg text-soft-text md:text-xl">
-                Real estate professional. Founder, Prestigious Services &amp;
-                Realty 1262. Georgetown, Guyana.
+                Founder, Prestigious Services &amp; Realty. 50+ transactions.
+                Positivity. Pureness. Professionalism.
               </p>
               <p className="mt-6 text-base leading-relaxed text-body-text">
                 Sherriann Elcock is a Guyanese real estate professional
-                and the founder of Prestigious Services &amp; Realty 1262,
                 operating across Georgetown, East Bank Demerara, Linden, and
-                surrounding regions. She is a Founding Advisor to Guyana
-                HomeHub — the real estate search platform built by US
-                entrepreneur Darren L. Buckner to bring structure, transparency,
-                and trust to property transactions in Guyana. Guyana HomeHub is
-                the first verified, structured property marketplace in the
-                country, built to connect diaspora buyers in New York, Toronto,
-                and London with real listings and licensed agents on the ground.
+                surrounding regions. With over 50 completed transactions
+                spanning land sales, residential properties, apartment
+                buildings, and corporate relocation, she has built her
+                reputation on one principle: every client deserves transparent,
+                professional service — not just the affluent buyer.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-body-text">
+                She serves as a Founding Advisor to Guyana HomeHub — the first
+                verified, structured property marketplace in Guyana, built by
+                US entrepreneur Darren L. Buckner to connect diaspora buyers
+                in New York, Toronto, and London with real listings and
+                trusted agents on the ground.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-6">
                 <a
@@ -144,7 +148,7 @@ export default function Home() {
               the property or I collaborate with another agent.
             </p>
             <p>
-              I founded Prestigious Services &amp; Realty 1262 and have built my
+              I founded Prestigious Services &amp; Realty and have built my
               reputation across more than 50 transactions spanning residential
               sales, land, apartment buildings, rentals, and corporate
               relocation. My regions are Region 3, West Bank, Upper East Bank

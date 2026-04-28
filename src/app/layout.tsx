@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "Sherriann Elcock | Guyana Real Estate Professional | Founding Advisor, Guyana HomeHub",
   description:
-    "Sherriann Elcock is a Guyanese real estate professional, founder of Prestigious Services & Realty 1262, and Founding Advisor to Guyana HomeHub — the platform connecting diaspora buyers with trusted Guyanese agents.",
+    "Sherriann Elcock is a Guyanese real estate professional, founder of Prestigious Services & Realty, and Founding Advisor to Guyana HomeHub — the platform connecting diaspora buyers with trusted Guyanese agents.",
   alternates: {
     canonical: "https://sherriannelcock.com",
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title:
       "Sherriann Elcock | Guyana Real Estate Professional | Founding Advisor, Guyana HomeHub",
     description:
-      "Sherriann Elcock is a Guyanese real estate professional, founder of Prestigious Services & Realty 1262, and Founding Advisor to Guyana HomeHub.",
+      "Sherriann Elcock is a Guyanese real estate professional, founder of Prestigious Services & Realty, and Founding Advisor to Guyana HomeHub.",
     url: "https://sherriannelcock.com",
     siteName: "Sherriann Elcock",
     images: [{ url: "/og-image.jpg" }],
@@ -48,7 +48,7 @@ const personSchema = {
   ],
   worksFor: {
     "@type": "Organization",
-    name: "Prestigious Services & Realty 1262",
+    name: "Prestigious Services & Realty",
     url: "https://sherriannelcock.com",
   },
   affiliation: [
