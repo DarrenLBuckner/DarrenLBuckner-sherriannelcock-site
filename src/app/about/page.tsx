@@ -297,6 +297,12 @@ export default function AboutPage() {
             >
               Connect on LinkedIn
             </a>
+            <a
+              href="mailto:sherriann@sherriannelcock.com"
+              className="inline-flex items-center justify-center rounded-md border-2 border-emerald-primary px-6 py-3 text-base font-semibold text-emerald-primary transition hover:bg-emerald-primary hover:text-white"
+            >
+              Email Sherriann
+            </a>
           </div>
         </div>
       </section>
