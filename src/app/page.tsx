@@ -45,26 +45,32 @@ export default function Home() {
           <span className="text-2xl font-bold tracking-tight text-emerald-primary">
             SE
           </span>
-          <div className="flex items-center gap-6 text-sm font-medium">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium">
+            <a
+              href="/about"
+              className="text-soft-text transition hover:text-emerald-primary"
+            >
+              About
+            </a>
+            <a
+              href="/events"
+              className="text-soft-text transition hover:text-emerald-primary"
+            >
+              Events
+            </a>
             <a
               href="https://www.youtube.com/@SherriannElcock"
               {...externalProps}
               className="text-soft-text transition hover:text-emerald-primary"
             >
-              Watch on YouTube
+              YouTube
             </a>
             <a
-              href="https://www.guyanahomehub.com/agents/sherriann-elcock"
+              href="https://guyanahomehub.com"
               {...externalProps}
               className="text-soft-text transition hover:text-emerald-primary"
             >
               View Listings
-            </a>
-            <a
-              href="#contact"
-              className="text-soft-text transition hover:text-emerald-primary"
-            >
-              Contact
             </a>
           </div>
         </div>
@@ -128,43 +134,6 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ABOUT */}
-      <section className="border-b border-rule">
-        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
-          <h2 className="text-3xl font-bold tracking-tight text-near-black md:text-4xl">
-            Real Estate. Real Talk.
-          </h2>
-          <div className="mt-8 space-y-6 text-base leading-relaxed text-body-text md:text-lg">
-            <p>
-              Before the transactions, before the listings, before the titles —
-              I&apos;m God-fearing, and I try my utmost best to be transparent.
-              Three P&apos;s have guided my entire career: Positivity. Pureness.
-              Professionalism. I never wanted to be rich. My success is helping
-              every client find what they&apos;re looking for — whether I have
-              the property or I collaborate with another agent.
-            </p>
-            <p>
-              I founded Prestigious Services &amp; Realty and have built my
-              reputation across more than 50 transactions spanning residential
-              sales, land, apartment buildings, rentals, and corporate
-              relocation. My regions are Region 3, West Bank, Upper East Bank
-              Demerara, and Linden. I work with local buyers, returning
-              diaspora, and corporate clients who need someone on the ground
-              they can actually trust.
-            </p>
-            <p>
-              In 2026 I became a Founding Advisor to Guyana HomeHub — the
-              platform built to solve the trust problem that has always existed
-              in Guyanese real estate. No more Facebook chaos. No more
-              disappearing agents. Just verified listings, licensed
-              professionals, and a platform built for how people actually buy
-              and rent property today. I believe in what this platform is doing
-              for Guyana, and I am proud to be part of it from the beginning.
-            </p>
           </div>
         </div>
       </section>
@@ -259,29 +228,10 @@ export default function Home() {
             Get in Touch
           </h2>
           <p className="mt-6 text-base leading-relaxed text-body-text md:text-lg">
-            If you are looking to buy, rent, or invest in Guyana — reach out. I
-            work with every client personally.
+            Looking to buy, rent, or invest in Guyana? Connect with Sherriann
+            directly through any of the channels below.
           </p>
           <ul className="mt-8 space-y-3 text-base text-body-text">
-            <li>
-              <a
-                href="https://wa.me/5926821262?text=Hi%20Sherriann%2C%20I%20found%20you%20on%20sherriannelcock.com%20and%20I%27d%20like%20to%20discuss%20a%20property."
-                {...externalProps}
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
-              >
-                <span aria-hidden="true">💬</span>
-                WhatsApp Sherriann
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:sherriann@sherriannelcock.com"
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
-              >
-                <span aria-hidden="true">✉️</span>
-                Email Sherriann
-              </a>
-            </li>
             <li className="flex items-center gap-3">
               <span aria-hidden="true">📍</span>
               <span>Georgetown, Guyana</span>
@@ -299,7 +249,7 @@ export default function Home() {
             <li className="flex items-center gap-3">
               <span aria-hidden="true">🌐</span>
               <a
-                href="https://www.guyanahomehub.com/agents/sherriann-elcock"
+                href="https://guyanahomehub.com"
                 {...externalProps}
                 className="text-emerald-primary transition hover:text-emerald-dark"
               >
@@ -309,7 +259,7 @@ export default function Home() {
             <li className="flex items-center gap-3">
               <span aria-hidden="true">💼</span>
               <a
-                href="https://www.linkedin.com/in/sherriannelcock"
+                href="https://linkedin.com/in/sherriann-elcock"
                 {...externalProps}
                 className="text-emerald-primary transition hover:text-emerald-dark"
               >
