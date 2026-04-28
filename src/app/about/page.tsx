@@ -277,7 +277,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://guyanahomehub.com"
+              href="https://www.guyanahomehub.com/agents/sherriann-elcock"
               {...externalProps}
               className="inline-flex items-center justify-center rounded-md bg-emerald-primary px-6 py-3 text-base font-semibold text-white transition hover:bg-emerald-dark"
             >

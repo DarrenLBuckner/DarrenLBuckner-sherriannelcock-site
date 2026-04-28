@@ -66,7 +66,7 @@ export default function Home() {
               YouTube
             </a>
             <a
-              href="https://guyanahomehub.com"
+              href="https://www.guyanahomehub.com/agents/sherriann-elcock"
               {...externalProps}
               className="text-soft-text transition hover:text-emerald-primary"
             >
@@ -116,7 +116,7 @@ export default function Home() {
                   Watch on YouTube
                 </a>
                 <a
-                  href="https://guyanahomehub.com"
+                  href="https://www.guyanahomehub.com/agents/sherriann-elcock"
                   {...externalProps}
                   className="text-base font-semibold text-emerald-primary transition hover:text-emerald-dark"
                 >

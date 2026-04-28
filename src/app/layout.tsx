@@ -132,7 +132,7 @@ export default function RootLayout({
                 Events
               </a>
               <a
-                href="https://guyanahomehub.com"
+                href="https://www.guyanahomehub.com/agents/sherriann-elcock"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-soft-text transition hover:text-emerald-primary"
