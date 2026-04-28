@@ -115,8 +115,13 @@ export default function Home() {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <div className="flex aspect-[4/5] w-full items-center justify-center rounded-lg border border-rule bg-emerald-light text-soft-text">
-                <span className="text-sm font-medium">Photo coming soon.</span>
+              <div className="aspect-[4/5] w-full overflow-hidden rounded-lg border border-rule bg-emerald-light">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/sherriann-elcock.jpg"
+                  alt="Sherriann Elcock"
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
           </div>
