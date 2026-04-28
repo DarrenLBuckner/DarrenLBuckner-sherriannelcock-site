@@ -108,7 +108,64 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <footer className="border-t border-rule bg-page">
+          <div className="mx-auto max-w-6xl px-6 py-8">
+            <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm font-medium">
+              <a
+                href="/"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                Home
+              </a>
+              <a
+                href="/about"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                About
+              </a>
+              <a
+                href="/events"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                Events
+              </a>
+              <a
+                href="https://guyanahomehub.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                Listings
+              </a>
+              <a
+                href="https://www.youtube.com/@SherriannElcock"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                YouTube
+              </a>
+              <a
+                href="https://linkedin.com/in/sherriann-elcock"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                LinkedIn
+              </a>
+            </nav>
+            <div className="mt-6 flex flex-col items-center justify-between gap-2 text-xs text-soft-text md:flex-row">
+              <p>
+                © 2026 Sherriann Elcock. Site built and hosted by Caribbean
+                HomeHub LLC.
+              </p>
+              <p>guyanahomehub.com | portalhomehub.com</p>
+            </div>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }

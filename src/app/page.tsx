@@ -320,16 +320,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-page">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-6 py-8 text-xs text-soft-text md:flex-row md:items-center">
-          <p>
-            © 2026 Sherriann Elcock. Site built and hosted by Caribbean
-            HomeHub LLC.
-          </p>
-          <p>guyanahomehub.com | portalhomehub.com</p>
-        </div>
-      </footer>
     </main>
   );
 }
