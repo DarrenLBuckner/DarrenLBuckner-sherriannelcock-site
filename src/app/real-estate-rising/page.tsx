@@ -59,7 +59,6 @@ const eventSchema = {
     { "@type": "Person", name: "Daren Torrington" },
     { "@type": "Person", name: "Tiffany Jeffrey-Durant" },
     { "@type": "Person", name: "Robert Pearson" },
-    { "@type": "Person", name: "Darren Buckner" },
   ],
 };
 
@@ -1051,7 +1050,7 @@ export default function RealEstateRisingPage() {
               <div className="agenda-dot"></div>
               <div className="agenda-body">
                 <h4>Closing Remarks</h4>
-                <p>Darren Buckner — Founder, Guyana HomeHub</p>
+                <p>TBA</p>
               </div>
             </div>
             <div className="agenda-item">
