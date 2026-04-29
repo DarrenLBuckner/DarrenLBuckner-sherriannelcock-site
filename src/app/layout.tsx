@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Sherriann Elcock is a Guyanese real estate professional, founder of Prestigious Services & Realty, and Founding Advisor to Guyana HomeHub.",
     url: "https://sherriannelcock.com",
     siteName: "Sherriann Elcock",
-    images: [{ url: "/og-image.jpg" }],
+    images: [{ url: "/images/sherriann-og-image.jpg" }],
     locale: "en_US",
     type: "website",
   },
