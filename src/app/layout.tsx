@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     "Sherriann Elcock | Guyana Real Estate Professional | Founding Advisor, Guyana HomeHub",
   description:
     "Sherriann Elcock is a Guyanese real estate professional, founder of Prestigious Services & Realty, and Founding Advisor to Guyana HomeHub — the platform connecting diaspora buyers with trusted Guyanese agents.",
+  authors: [{ name: "Darren L. Buckner", url: "https://darrenlbuckner.com" }],
   alternates: {
     canonical: "https://sherriannelcock.com",
   },
