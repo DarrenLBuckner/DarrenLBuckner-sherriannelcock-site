@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     description:
       "Get your questions answered. Grow your business. May 22nd, 2026 — Georgetown, Guyana. Free to attend.",
     type: "website",
+    images: [
+      {
+        url: "https://sherriannelcock.com/images/sherriann%20flyer%20real%20estate%20rising.png",
+        width: 1024,
+        height: 1536,
+        alt: "Real Estate Forward: Guyana 2026 & Beyond — Presented by Sherriann Elcock",
+      },
+    ],
   },
 };
 
@@ -35,6 +43,7 @@ const eventSchema = {
   name: "Real Estate Forward: Guyana 2026 & Beyond",
   description:
     "A professional real estate and entrepreneurship industry seminar bringing together agents, attorneys, regulators, and financial professionals to elevate the standards of Guyana's real estate industry.",
+  image: "https://sherriannelcock.com/images/sherriann%20flyer%20real%20estate%20rising.png",
   startDate: "2026-05-22T09:00:00-04:00",
   endDate: "2026-05-22T13:00:00-04:00",
   eventStatus: "https://schema.org/EventScheduled",
@@ -1201,11 +1210,11 @@ export default function RealEstateRisingPage() {
       {/* HOST */}
       <section className="host-section">
         <div className="host-inner">
-          <div className="host-photo">
+          <div className="host-photo" style={{ height: "330px" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/sherriann-elcock.jpg"
-              alt="Sherriann Elcock"
+              src="/images/sherriann%20flyer%20real%20estate%20rising.png"
+              alt="Real Estate Forward: Guyana 2026 & Beyond — Presented by Sherriann Elcock"
             />
           </div>
           <div>
