@@ -1081,8 +1081,11 @@ export default function RealEstateRisingPage() {
           <div className="speakers-grid">
             <div className="speaker-card">
               <div className="speaker-photo">
-                <span className="placeholder-icon">👤</span>
-                <span className="photo-hint">Photo coming</span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/Tiffany%20Durant%20Headshot.jpeg"
+                  alt="Tiffany Jeffrey-Durant"
+                />
               </div>
               <div className="speaker-info">
                 <div className="speaker-name">Tiffany Jeffrey-Durant</div>
@@ -1094,9 +1097,13 @@ export default function RealEstateRisingPage() {
             </div>
 
             <div className="speaker-card">
-              <div className="speaker-photo">
-                <span className="placeholder-icon">🏛️</span>
-                <span className="photo-hint">Photo coming</span>
+              <div className="speaker-photo" style={{ background: "#fff" }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/gra%20logo.jpg"
+                  alt="Guyana Revenue Authority logo"
+                  style={{ objectFit: "contain", padding: "16px" }}
+                />
               </div>
               <div className="speaker-info">
                 <div className="speaker-name">GRA Representative</div>
@@ -1109,8 +1116,11 @@ export default function RealEstateRisingPage() {
 
             <div className="speaker-card">
               <div className="speaker-photo">
-                <span className="placeholder-icon">👤</span>
-                <span className="photo-hint">Photo coming</span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/Robert%20pearson%20headshot.png"
+                  alt="Robert Pearson"
+                />
               </div>
               <div className="speaker-info">
                 <div className="speaker-name">Robert Pearson</div>
@@ -1123,8 +1133,11 @@ export default function RealEstateRisingPage() {
 
             <div className="speaker-card">
               <div className="speaker-photo">
-                <span className="placeholder-icon">👤</span>
-                <span className="photo-hint">Photo coming</span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/darren%20buckner%20headshot.png"
+                  alt="Darren Buckner"
+                />
               </div>
               <div className="speaker-info">
                 <div className="speaker-name">Darren Buckner</div>
@@ -1134,6 +1147,39 @@ export default function RealEstateRisingPage() {
                 </div>
                 <span className="speaker-badge" style={{ background: "rgba(240,192,64,0.15)", color: "#92400e" }}>
                   ★ Just Added
+                </span>
+              </div>
+            </div>
+
+            <div className="speaker-card">
+              <div className="speaker-photo">
+                <span className="placeholder-icon">🏛️</span>
+                <span className="photo-hint">Awaiting confirmation</span>
+              </div>
+              <div className="speaker-info">
+                <div className="speaker-name">NIS Representative</div>
+                <div className="speaker-role">
+                  National Insurance Scheme &mdash; Self-Employed Benefits
+                  &amp; Obligations
+                </div>
+                <span className="speaker-badge" style={{ background: "rgba(217,119,6,0.12)", color: "#b45309" }}>
+                  ⏳ Awaiting Confirmation
+                </span>
+              </div>
+            </div>
+
+            <div className="speaker-card">
+              <div className="speaker-photo">
+                <span className="placeholder-icon">🏦</span>
+                <span className="photo-hint">Awaiting confirmation</span>
+              </div>
+              <div className="speaker-info">
+                <div className="speaker-name">Banking Institution</div>
+                <div className="speaker-role">
+                  Mortgages, Financing &amp; Banking Services
+                </div>
+                <span className="speaker-badge" style={{ background: "rgba(217,119,6,0.12)", color: "#b45309" }}>
+                  ⏳ Awaiting Confirmation
                 </span>
               </div>
             </div>
