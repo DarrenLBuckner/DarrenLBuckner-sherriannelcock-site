@@ -3,16 +3,16 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Events | Sherriann Elcock — Guyana Real Estate",
   description:
-    "Industry events hosted and moderated by Sherriann Elcock. Real estate seminars, professional development, and community conversations for Guyana's property market.",
+    "Real Estate Forward: Guyana 2026 & Beyond — May 22, 2026, Georgetown. A live open industry forum hosted by Sherriann Elcock. Free to attend. Limited seats. Register now.",
   alternates: { canonical: "https://sherriannelcock.com/events" },
 };
 
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Real Estate Rising: Guyana's Professional Moment",
+  name: "Real Estate Forward: Guyana 2026 & Beyond",
   startDate: "2026-05-22T09:00:00-04:00",
-  endDate: "2026-05-22T12:00:00-04:00",
+  endDate: "2026-05-22T13:00:00-04:00",
   eventStatus: "https://schema.org/EventScheduled",
   isAccessibleForFree: true,
   location: {
@@ -68,20 +68,23 @@ export default function EventsPage() {
               Upcoming — Register Now
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-near-black md:text-4xl">
-              Real Estate Rising: Guyana&apos;s Professional Moment
+              Real Estate Forward: Guyana 2026 &amp; Beyond
             </h2>
             <p className="mt-3 text-base font-semibold text-emerald-primary">
-              Friday, May 22nd 2026 — 9:00 AM to 12:00 Noon
+              Friday, May 22nd 2026 — 9:00 AM to 1:00 PM
             </p>
             <p className="mt-2 text-sm text-soft-text">
               Centre for Local Business Development, 253-254 South Road,
               Bourda, Georgetown, Guyana
             </p>
             <p className="mt-6 text-base leading-relaxed text-body-text md:text-lg">
-              A professional real estate and entrepreneurship industry seminar
-              bringing together agents, attorneys, regulators, and financial
-              professionals. The conversation Guyana&apos;s real estate
-              industry needs right now. Free to attend.
+              For real estate agents, aspiring agents, and entrepreneurs ready
+              for Guyana&apos;s new real estate era. Banking, mortgages, GRA
+              compliance, legal guidance — and an open floor for your
+              questions. An open industry forum where agents get real answers
+              from GRA, NIS, banking institutions, and legal professionals.
+              Ask questions. Voice concerns. Walk away better equipped. Free
+              to attend.
             </p>
 
             <h3 className="mt-8 text-sm font-semibold uppercase tracking-widest text-emerald-primary">
@@ -89,16 +92,21 @@ export default function EventsPage() {
             </h3>
             <ul className="mt-3 space-y-2 text-base text-body-text">
               <li>
-                Daren Torrington — Entrepreneurship &amp; Development
-                Practitioner
-              </li>
-              <li>
-                Tiffany Jeffrey-Durant — Attorney-at-Law &amp; Property
+                Tiffany Jeffrey-Durant — Attorney-at-Law, Durant Property
                 Management
               </li>
+              <li>
+                Robert Pearson — Real Estate Professional, 10+ Years |
+                Training Future Real Estate Agents
+              </li>
               <li>GRA Representative — Licensing &amp; Tax Compliance</li>
-              <li>Robert Pearson — Real Estate Professional</li>
-              <li>Closing Remarks — TBA</li>
+              <li>
+                NIS Representative — Self-Employed Benefits &amp; Obligations
+              </li>
+              <li>
+                ★ Just Added: Darren Buckner — Founder &amp; CEO, Guyana
+                HomeHub
+              </li>
             </ul>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -127,7 +135,7 @@ export default function EventsPage() {
             More Events Coming
           </h2>
           <p className="mt-6 text-base leading-relaxed text-body-text md:text-lg">
-            Real Estate Rising is the beginning. Sherriann hosts industry
+            Real Estate Forward is the beginning. Sherriann hosts industry
             conversations twice a year — bringing together the professionals,
             regulators, and voices that Guyana&apos;s real estate market needs
             to hear from. Stay tuned.

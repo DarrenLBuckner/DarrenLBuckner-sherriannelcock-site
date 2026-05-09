@@ -18,13 +18,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title:
-    "Real Estate Rising: Guyana's Professional Moment — May 22, 2026",
+    "Real Estate Forward: Guyana 2026 & Beyond — May 22, 2026",
   description:
-    "A professional real estate industry seminar hosted by Sherriann Elcock. Georgetown, Guyana — Friday May 22nd, 2026. Free to attend. Register now.",
+    "A professional real estate industry forum hosted by Sherriann Elcock. Georgetown, Guyana — Friday May 22nd, 2026. Free to attend. Register now.",
   openGraph: {
-    title: "Real Estate Rising: Guyana's Professional Moment",
+    title: "Real Estate Forward: Guyana 2026 & Beyond",
     description:
-      "The conversation Guyana's real estate industry needs right now. May 22nd, 2026 — Georgetown, Guyana. Free to attend.",
+      "Get your questions answered. Grow your business. May 22nd, 2026 — Georgetown, Guyana. Free to attend.",
     type: "website",
   },
 };
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Real Estate Rising: Guyana's Professional Moment",
+  name: "Real Estate Forward: Guyana 2026 & Beyond",
   description:
     "A professional real estate and entrepreneurship industry seminar bringing together agents, attorneys, regulators, and financial professionals to elevate the standards of Guyana's real estate industry.",
   startDate: "2026-05-22T09:00:00-04:00",
-  endDate: "2026-05-22T12:00:00-04:00",
+  endDate: "2026-05-22T13:00:00-04:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   isAccessibleForFree: true,
@@ -56,9 +56,9 @@ const eventSchema = {
     url: "https://sherriannelcock.com",
   },
   performer: [
-    { "@type": "Person", name: "Daren Torrington" },
     { "@type": "Person", name: "Tiffany Jeffrey-Durant" },
     { "@type": "Person", name: "Robert Pearson" },
+    { "@type": "Person", name: "Darren Buckner" },
   ],
 };
 
@@ -866,17 +866,23 @@ export default function RealEstateRisingPage() {
           <h1 className="hero-title">
             Real Estate
             <br />
-            <span className="gold">Rising</span>
+            <span className="gold">Forward</span>
           </h1>
-          <p className="hero-subtitle">Guyana&apos;s Professional Moment</p>
+          <p className="hero-subtitle">Guyana 2026 &amp; Beyond</p>
           <p className="hero-tagline">
-            The conversation Guyana&apos;s real estate industry needs right now
+            Get your questions answered. Grow your business. Don&apos;t miss this.
+          </p>
+
+          <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", letterSpacing: "0.06em", marginBottom: "24px", lineHeight: "1.6" }}>
+            For <strong style={{ color: "#fff" }}>real estate agents</strong> &nbsp;·&nbsp;
+            <strong style={{ color: "#fff" }}>aspiring agents</strong> &nbsp;·&nbsp;
+            <strong style={{ color: "#fff" }}>entrepreneurs</strong> ready for Guyana&apos;s new real estate era
           </p>
 
           <div className="date-badge">
             <div className="date-part">Friday, May 22nd 2026</div>
             <div className="divider"></div>
-            <div className="date-part">9:00 AM — 12:00 Noon</div>
+            <div className="date-part">9:00 AM — 1:00 PM</div>
           </div>
 
           <br />
@@ -927,7 +933,7 @@ export default function RealEstateRisingPage() {
                 Just Facebook Marketplace and a lot of uncertainty.
               </p>
               <p>
-                Real Estate Rising is the conversation that changes that.
+                Real Estate Forward is the conversation that changes that.
                 Brought together by Sherriann Elcock, this half-day seminar
                 gathers agents, attorneys, regulators, and financial
                 professionals to set a new standard for what real estate
@@ -942,28 +948,28 @@ export default function RealEstateRisingPage() {
             <div className="topics-list">
               <h3>What We&apos;ll Cover</h3>
               <div className="topic-item">
-                <span className="topic-icon">📋</span>
-                <span>Real Estate as a Business — Not Just a Side Hustle</span>
+                <span className="topic-icon">📈</span>
+                <span>Market Direction — Where Guyana real estate is heading right now</span>
+              </div>
+              <div className="topic-item">
+                <span className="topic-icon">🏦</span>
+                <span>Banking, Mortgages &amp; How to Get Your Clients Financed</span>
+              </div>
+              <div className="topic-item">
+                <span className="topic-icon">📱</span>
+                <span>Technology &amp; Tools Changing How Property is Listed and Sold</span>
+              </div>
+              <div className="topic-item">
+                <span className="topic-icon">❓</span>
+                <span>Open Floor — Your Questions Answered by the People Who Can Help</span>
+              </div>
+              <div className="topic-item">
+                <span className="topic-icon">🏛️</span>
+                <span>Licensing, Tax Compliance &amp; Agent Obligations (GRA)</span>
               </div>
               <div className="topic-item">
                 <span className="topic-icon">⚖️</span>
                 <span>Legal Protection for Buyers &amp; Agents</span>
-              </div>
-              <div className="topic-item">
-                <span className="topic-icon">🏛️</span>
-                <span>Licensing, Tax Compliance &amp; Agent Obligations</span>
-              </div>
-              <div className="topic-item">
-                <span className="topic-icon">🏦</span>
-                <span>Banking, Mortgages &amp; What Banks Are Offering Now</span>
-              </div>
-              <div className="topic-item">
-                <span className="topic-icon">📱</span>
-                <span>Digital Presence &amp; Marketing for Agents</span>
-              </div>
-              <div className="topic-item">
-                <span className="topic-icon">🌍</span>
-                <span>The Diaspora Buyer — What They Want</span>
               </div>
             </div>
           </div>
@@ -992,17 +998,6 @@ export default function RealEstateRisingPage() {
               <div className="agenda-body">
                 <h4>Welcome &amp; Opening</h4>
                 <p>Hosted by Sherriann Elcock</p>
-              </div>
-            </div>
-            <div className="agenda-item">
-              <div className="agenda-time">9:40 AM</div>
-              <div className="agenda-dot"></div>
-              <div className="agenda-body">
-                <h4>Are You an Agent or an Entrepreneur?</h4>
-                <p>
-                  Daren Torrington — Entrepreneurship &amp; Development
-                  Practitioner
-                </p>
               </div>
             </div>
             <div className="agenda-item">
@@ -1049,16 +1044,24 @@ export default function RealEstateRisingPage() {
               <div className="agenda-time">11:35 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
-                <h4>Closing Remarks</h4>
-                <p>TBA</p>
+                <h4>Special Guest — Closing Remarks</h4>
+                <p>Darren Buckner — Founder &amp; CEO, Guyana HomeHub</p>
               </div>
             </div>
             <div className="agenda-item">
-              <div className="agenda-time">11:45 AM</div>
+              <div className="agenda-time">12:00 PM</div>
+              <div className="agenda-dot"></div>
+              <div className="agenda-body">
+                <h4>Open Floor — Agents Speak</h4>
+                <p>Questions, concerns, open discussion — the floor belongs to you</p>
+              </div>
+            </div>
+            <div className="agenda-item">
+              <div className="agenda-time">12:45 PM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
                 <h4>Close &amp; Networking</h4>
-                <p></p>
+                <p>Event ends 1:00 PM · Light refreshments served</p>
               </div>
             </div>
           </div>
@@ -1076,20 +1079,6 @@ export default function RealEstateRisingPage() {
           </h2>
 
           <div className="speakers-grid">
-            <div className="speaker-card">
-              <div className="speaker-photo">
-                <span className="placeholder-icon">👤</span>
-                <span className="photo-hint">Photo coming</span>
-              </div>
-              <div className="speaker-info">
-                <div className="speaker-name">Daren Torrington</div>
-                <div className="speaker-role">
-                  Entrepreneurship &amp; Development Practitioner
-                </div>
-                <span className="speaker-badge">Opening Session</span>
-              </div>
-            </div>
-
             <div className="speaker-card">
               <div className="speaker-photo">
                 <span className="placeholder-icon">👤</span>
@@ -1125,8 +1114,27 @@ export default function RealEstateRisingPage() {
               </div>
               <div className="speaker-info">
                 <div className="speaker-name">Robert Pearson</div>
-                <div className="speaker-role">Real Estate Professional</div>
+                <div className="speaker-role">
+                  Real Estate Professional, 10+ Years &mdash; Founder, Training Future Real Estate Agents
+                </div>
                 <span className="speaker-badge">Agent Panel</span>
+              </div>
+            </div>
+
+            <div className="speaker-card">
+              <div className="speaker-photo">
+                <span className="placeholder-icon">👤</span>
+                <span className="photo-hint">Photo coming</span>
+              </div>
+              <div className="speaker-info">
+                <div className="speaker-name">Darren Buckner</div>
+                <div className="speaker-role">
+                  Founder &amp; CEO, Guyana HomeHub &mdash; Guyana&apos;s verified
+                  real estate platform, live on iPhone &amp; Android
+                </div>
+                <span className="speaker-badge" style={{ background: "rgba(240,192,64,0.15)", color: "#92400e" }}>
+                  ★ Just Added
+                </span>
               </div>
             </div>
 
@@ -1194,7 +1202,7 @@ export default function RealEstateRisingPage() {
             </p>
             <p className="host-bio" style={{ marginTop: "12px" }}>
               She is the organizer and moderator of{" "}
-              <em>Real Estate Rising: Guyana&apos;s Professional Moment</em> —
+              <em>Real Estate Forward: Guyana 2026 &amp; Beyond</em> —
               and the reason this conversation is happening at all.
             </p>
             <p className="host-tagline">
@@ -1238,7 +1246,9 @@ export default function RealEstateRisingPage() {
               <br />
               Paper sign-in also available at the door.
               <br />
-              Live stream available on Facebook for diaspora attendees.
+              Complimentary light refreshments, snacks &amp; coffee included.
+              <br />
+              Live stream available on Facebook for those who cannot attend in person.
             </p>
           </div>
         </div>
@@ -1259,7 +1269,7 @@ export default function RealEstateRisingPage() {
       {/* FOOTER */}
       <footer className="rer-footer">
         <p>
-          Real Estate Rising: Guyana&apos;s Professional Moment &nbsp;·&nbsp;
+          Real Estate Forward: Guyana 2026 &amp; Beyond &nbsp;·&nbsp;
           Friday May 22nd, 2026
           <br />
           Centre for Local Business Development, Georgetown, Guyana
