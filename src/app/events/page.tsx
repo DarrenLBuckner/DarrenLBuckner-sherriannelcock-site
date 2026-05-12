@@ -92,6 +92,10 @@ export default function EventsPage() {
             </h3>
             <ul className="mt-3 space-y-2 text-base text-body-text">
               <li>
+                Nicola Duggan — CEO, Paradigm Logistics &amp; Management
+                Services (Industry Advocate)
+              </li>
+              <li>
                 Tiffany Jeffrey-Durant — Attorney-at-Law, Durant Property
                 Management
               </li>

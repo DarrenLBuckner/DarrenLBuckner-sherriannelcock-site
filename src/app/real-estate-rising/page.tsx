@@ -65,6 +65,7 @@ const eventSchema = {
     url: "https://sherriannelcock.com",
   },
   performer: [
+    { "@type": "Person", name: "Nicola Duggan" },
     { "@type": "Person", name: "Tiffany Jeffrey-Durant" },
     { "@type": "Person", name: "Robert Pearson" },
     { "@type": "Person", name: "Darren Buckner" },
@@ -1088,6 +1089,23 @@ export default function RealEstateRisingPage() {
           </h2>
 
           <div className="speakers-grid">
+            <div className="speaker-card">
+              <div className="speaker-photo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/Nicola%20Duggan%20Headshot.jpeg"
+                  alt="Nicola Duggan"
+                />
+              </div>
+              <div className="speaker-info">
+                <div className="speaker-name">Nicola Duggan</div>
+                <div className="speaker-role">
+                  CEO, Paradigm Logistics &amp; Management Services
+                </div>
+                <span className="speaker-badge">Industry Advocate</span>
+              </div>
+            </div>
+
             <div className="speaker-card">
               <div className="speaker-photo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
