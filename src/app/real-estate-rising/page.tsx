@@ -43,7 +43,7 @@ const eventSchema = {
   "@type": "Event",
   name: "Real Estate Forward: Guyana 2026 & Beyond",
   description:
-    "A professional real estate and entrepreneurship industry seminar bringing together agents, attorneys, regulators, and financial professionals to elevate the standards of Guyana's real estate industry.",
+    "A professional real estate industry forum bringing together agents, attorneys, regulators, banking institutions, and financial professionals. Keynote address by Nicola Duggan, CEO of Paradigm Property Logistics & Management and Director of the Guyana Association of Real Estate Professionals (GAREP).",
   image: "https://sherriannelcock.com/images/sherriann%20flyer%20real%20estate%20rising.png",
   startDate: "2026-05-22T09:00:00-04:00",
   endDate: "2026-05-22T13:00:00-04:00",
@@ -68,7 +68,6 @@ const eventSchema = {
   performer: [
     { "@type": "Person", name: "Nicola Duggan" },
     { "@type": "Person", name: "Tiffany Jeffrey-Durant" },
-    { "@type": "Person", name: "Robert Pearson" },
     { "@type": "Person", name: "Darren Buckner" },
   ],
 };
@@ -492,6 +491,39 @@ const pageStyles = `
   .rer-page .agenda-body p {
     font-size: 13px;
     color: var(--text-light);
+  }
+
+  /* ── KEYNOTE AGENDA ITEM ── */
+  .rer-page .agenda-item.keynote {
+    background: rgba(240, 192, 64, 0.06);
+    border-left: 3px solid var(--gold);
+    padding-left: 12px;
+    margin-left: -12px;
+  }
+
+  .rer-page .agenda-item.keynote .agenda-dot {
+    background: var(--gold);
+    width: 14px;
+    height: 14px;
+    margin-top: 4px;
+  }
+
+  .rer-page .agenda-item.keynote .agenda-body h4 {
+    color: var(--gold);
+    font-size: 16px;
+  }
+
+  .rer-page .keynote-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--forest);
+    background: var(--gold);
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-bottom: 4px;
   }
 
   /* ── SPEAKERS ── */
@@ -1062,14 +1094,18 @@ export default function RealEstateRisingPage() {
             The <em>agenda</em>
           </h2>
           <div className="agenda-list">
+
+            {/* DOORS OPEN */}
             <div className="agenda-item">
               <div className="agenda-time">9:00 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
                 <h4>Doors Open</h4>
-                <p>Registration &amp; networking</p>
+                <p>Registration, networking &amp; complimentary refreshments</p>
               </div>
             </div>
+
+            {/* WELCOME */}
             <div className="agenda-item">
               <div className="agenda-time">9:30 AM</div>
               <div className="agenda-dot"></div>
@@ -1078,70 +1114,104 @@ export default function RealEstateRisingPage() {
                 <p>Hosted by Sherriann Elcock</p>
               </div>
             </div>
+
+            {/* KEYNOTE — NICOLA DUGGAN */}
+            <div className="agenda-item keynote">
+              <div className="agenda-time">9:45 AM</div>
+              <div className="agenda-dot"></div>
+              <div className="agenda-body">
+                <div className="keynote-badge">Keynote Address</div>
+                <h4>
+                  Real Estate as Services and Not Simply Business or Supplemental Income<br/>
+                  Ethical Practices, Compliance &amp; Industry Trends
+                </h4>
+                <p>
+                  Nicola &ldquo;Nics&rdquo; Duggan &mdash; CEO, Paradigm Property Logistics &amp; Management
+                  &nbsp;|&nbsp; Director, Guyana Association of Real Estate Professionals (GAREP)
+                </p>
+              </div>
+            </div>
+
+            {/* GRA */}
             <div className="agenda-item">
-              <div className="agenda-time">10:00 AM</div>
+              <div className="agenda-time">10:15 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
                 <h4>Licensing, Tax &amp; Agent Obligations</h4>
-                <p>Guyana Revenue Authority (GRA)</p>
+                <p>Guyana Revenue Authority (GRA) &mdash; Open Q&amp;A</p>
               </div>
             </div>
+
+            {/* NIS */}
             <div className="agenda-item">
-              <div className="agenda-time">10:20 AM</div>
+              <div className="agenda-time">10:45 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
-                <h4>Banking, Mortgages &amp; Financing</h4>
-                <p>Financial Institution Representative</p>
+                <h4>Self-Employed Benefits &amp; NIS Obligations</h4>
+                <p>National Insurance Scheme (NIS) &mdash; Open Q&amp;A</p>
               </div>
             </div>
+
+            {/* TIFFANY */}
             <div className="agenda-item">
-              <div className="agenda-time">10:40 AM</div>
-              <div className="agenda-dot"></div>
-              <div className="agenda-body">
-                <h4>Panel Discussion Opens</h4>
-                <p>Moderated by Sherriann Elcock</p>
-              </div>
-            </div>
-            <div className="agenda-item">
-              <div className="agenda-time">11:00 AM</div>
+              <div className="agenda-time">11:10 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
                 <h4>Legal Protection for Buyers &amp; Agents</h4>
-                <p>Tiffany Jeffrey-Durant — Attorney-at-Law</p>
+                <p>Tiffany Jeffrey-Durant &mdash; Attorney-at-Law, Durant Property Management</p>
               </div>
             </div>
+
+            {/* BANKING */}
             <div className="agenda-item">
-              <div className="agenda-time">11:15 AM</div>
+              <div className="agenda-time">11:30 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
-                <h4>Digital Presence &amp; Marketing for Agents</h4>
-                <p>Speaker to be confirmed</p>
+                <h4>Banking, Mortgages &amp; Financing</h4>
+                <p>Banking Institution Representative</p>
               </div>
             </div>
+
+            {/* DARREN BUCKNER */}
             <div className="agenda-item">
-              <div className="agenda-time">11:35 AM</div>
+              <div className="agenda-time">11:50 AM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
-                <h4>Special Guest — Closing Remarks</h4>
-                <p>Darren Buckner — Founder &amp; CEO, Guyana HomeHub</p>
+                <h4>Technology &amp; The Future of Real Estate in Guyana</h4>
+                <p>Darren Buckner &mdash; Founder &amp; CEO, Guyana HomeHub</p>
               </div>
             </div>
+
+            {/* OPEN FLOOR */}
             <div className="agenda-item">
-              <div className="agenda-time">12:00 PM</div>
+              <div className="agenda-time">12:10 PM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
-                <h4>Open Floor — Agents Speak</h4>
-                <p>Questions, concerns, open discussion — the floor belongs to you</p>
+                <h4>Open Floor &mdash; Agents Speak</h4>
+                <p>Questions, concerns, open discussion &mdash; the floor belongs to you</p>
               </div>
             </div>
+
+            {/* CLOSING */}
             <div className="agenda-item">
               <div className="agenda-time">12:45 PM</div>
               <div className="agenda-dot"></div>
               <div className="agenda-body">
-                <h4>Close &amp; Networking</h4>
-                <p>Event ends 1:00 PM · Light refreshments served</p>
+                <h4>Closing Remarks</h4>
+                <p>Sherriann Elcock</p>
               </div>
             </div>
+
+            {/* CLOSE */}
+            <div className="agenda-item">
+              <div className="agenda-time">1:00 PM</div>
+              <div className="agenda-dot"></div>
+              <div className="agenda-body">
+                <h4>Close &amp; Networking</h4>
+                <p>Event ends &mdash; light refreshments continue</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -1170,7 +1240,7 @@ export default function RealEstateRisingPage() {
                   office space, retail, and industrial facilities.
                 </div>
                 <div className="speaker-bio-topic">
-                  &ldquo;Real Estate as a Service, Ethical Practices and Compliance&rdquo;
+                  &ldquo;Real Estate as Services and Not Simply Business or Supplemental Income &middot; Ethical Practices, Compliance and Industry Trends&rdquo;
                 </div>
               </div>
               <div className="speaker-photo">
