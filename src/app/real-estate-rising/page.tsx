@@ -1277,6 +1277,7 @@ export default function RealEstateRisingPage() {
                 <img
                   src="/images/Tiffany%20Durant%20Headshot.jpeg"
                   alt="Tiffany Jeffrey-Durant"
+                  style={{ objectPosition: "top" }}
                 />
               </div>
               <div className="speaker-info">
