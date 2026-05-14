@@ -1126,7 +1126,7 @@ export default function RealEstateRisingPage() {
                   Ethical Practices, Compliance &amp; Industry Trends
                 </h4>
                 <p>
-                  Nicola &ldquo;Nics&rdquo; Duggan &mdash; CEO, Paradigm Property Logistics &amp; Management
+                  Nicola Duggan &mdash; CEO, Paradigm Property Logistics &amp; Management
                   &nbsp;|&nbsp; Director, Guyana Association of Real Estate Professionals (GAREP)
                 </p>
               </div>
@@ -1251,7 +1251,7 @@ export default function RealEstateRisingPage() {
                 />
               </div>
               <div className="speaker-info">
-                <div className="speaker-name">Nicola &ldquo;Nics&rdquo; Duggan</div>
+                <div className="speaker-name">Nicola Duggan</div>
                 <div className="speaker-role">
                   CEO, Paradigm Property Logistics &amp; Management<br/>
                   Director, Guyana Association of Real Estate Professionals (GAREP)
