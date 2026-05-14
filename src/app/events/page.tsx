@@ -108,8 +108,12 @@ export default function EventsPage() {
                 NIS Representative — Self-Employed Benefits &amp; Obligations
               </li>
               <li>
-                ★ Just Added: Darren Buckner — Founder &amp; CEO, Guyana
-                HomeHub
+                GBTI &amp; Republic Bank — Mortgages, Financing &amp; Banking
+                Services
+              </li>
+              <li>
+                Darren Buckner — Founder &amp; CEO, Guyana HomeHub (PropTech
+                &amp; Innovation)
               </li>
             </ul>
 

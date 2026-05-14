@@ -1168,7 +1168,7 @@ export default function RealEstateRisingPage() {
               <div className="agenda-dot"></div>
               <div className="agenda-body">
                 <h4>Banking, Mortgages &amp; Financing</h4>
-                <p>Banking Institution Representative</p>
+                <p>GBTI &amp; Republic Bank &mdash; Mortgages &amp; Client Financing</p>
               </div>
             </div>
 
@@ -1345,7 +1345,7 @@ export default function RealEstateRisingPage() {
 
             <div className="speaker-card">
               <div className="speaker-bio-overlay">
-                <div className="speaker-bio-title">&#9733; Just Added</div>
+                <div className="speaker-bio-title">PropTech &amp; Innovation</div>
                 <div className="speaker-bio-text">
                   Founder &amp; CEO of Guyana HomeHub &mdash; Guyana&apos;s first verified
                   real estate search platform, live on iPhone &amp; Android. Born in the
@@ -1373,9 +1373,7 @@ export default function RealEstateRisingPage() {
                   Founder &amp; CEO, Guyana HomeHub<br/>
                   guyanahomehub.com &mdash; iPhone &amp; Android
                 </div>
-                <span className="speaker-badge" style={{ background: "rgba(240,192,64,0.15)", color: "#92400e" }}>
-                  ★ Just Added
-                </span>
+                <span className="speaker-badge">PropTech</span>
               </div>
             </div>
 
@@ -1392,7 +1390,6 @@ export default function RealEstateRisingPage() {
               </div>
               <div className="speaker-photo">
                 <span className="placeholder-icon">🏛️</span>
-                <span className="photo-hint">Awaiting confirmation</span>
               </div>
               <div className="speaker-info">
                 <div className="speaker-name">NIS Representative</div>
@@ -1400,9 +1397,7 @@ export default function RealEstateRisingPage() {
                   National Insurance Scheme &mdash; Self-Employed Benefits
                   &amp; Obligations
                 </div>
-                <span className="speaker-badge" style={{ background: "rgba(217,119,6,0.12)", color: "#b45309" }}>
-                  ⏳ Awaiting Confirmation
-                </span>
+                <span className="speaker-badge">Benefits Session</span>
               </div>
             </div>
 
@@ -1410,9 +1405,9 @@ export default function RealEstateRisingPage() {
               <div className="speaker-bio-overlay">
                 <div className="speaker-bio-title">Banking &amp; Financing</div>
                 <div className="speaker-bio-text">
-                  Banking institution representative covering mortgage products, client
-                  financing options, requirements for local and overseas buyers, and
-                  investment property financing.
+                  Representatives from GBTI and Republic Bank covering mortgage
+                  products, client financing options, requirements for local and
+                  overseas buyers, and investment property financing.
                 </div>
                 <div className="speaker-bio-topic">
                   How to get your clients financed and close more deals.
@@ -1420,16 +1415,13 @@ export default function RealEstateRisingPage() {
               </div>
               <div className="speaker-photo">
                 <span className="placeholder-icon">🏦</span>
-                <span className="photo-hint">Awaiting confirmation</span>
               </div>
               <div className="speaker-info">
-                <div className="speaker-name">Banking Institution</div>
+                <div className="speaker-name">GBTI &amp; Republic Bank</div>
                 <div className="speaker-role">
                   Mortgages, Financing &amp; Banking Services
                 </div>
-                <span className="speaker-badge" style={{ background: "rgba(217,119,6,0.12)", color: "#b45309" }}>
-                  ⏳ Awaiting Confirmation
-                </span>
+                <span className="speaker-badge">Banking &amp; Financing</span>
               </div>
             </div>
 
