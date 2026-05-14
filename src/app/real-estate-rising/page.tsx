@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import SpeakerBioTapHandler from "./SpeakerBioTapHandler";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -584,6 +585,72 @@ const pageStyles = `
     border-radius: 2px;
   }
 
+  /* ── SPEAKER CARD HOVER BIO OVERLAY ── */
+  .rer-page .speaker-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rer-page .speaker-bio-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(7, 26, 14, 0.96);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 16px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .rer-page .speaker-card:hover .speaker-bio-overlay,
+  .rer-page .speaker-card.bio-active .speaker-bio-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .rer-page .speaker-bio-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .rer-page .speaker-bio-text {
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.65;
+    margin-bottom: 10px;
+  }
+
+  .rer-page .speaker-bio-topic {
+    font-size: 11px;
+    font-style: italic;
+    color: var(--soft-green);
+    line-height: 1.5;
+    border-top: 1px solid rgba(168, 219, 190, 0.2);
+    padding-top: 8px;
+    margin-top: 4px;
+  }
+
+  /* Mobile tap support */
+  @media (hover: none) {
+    .rer-page .speaker-card .speaker-bio-overlay {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    .rer-page .speaker-card.bio-active .speaker-bio-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .rer-page .pending-card {
     background: rgba(26,107,60,0.05);
     border: 2px dashed rgba(26,107,60,0.2);
@@ -858,6 +925,7 @@ export default function RealEstateRisingPage() {
   return (
     <div className={`rer-page ${cormorant.variable} ${dmSans.variable}`}>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
+      <SpeakerBioTapHandler />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
@@ -1090,6 +1158,21 @@ export default function RealEstateRisingPage() {
 
           <div className="speakers-grid">
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">Keynote Speaker</div>
+                <div className="speaker-bio-text">
+                  CEO of Paradigm Property Logistics &amp; Management and Director of the
+                  Guyana Association of Real Estate Professionals (GAREP). A respected
+                  voice in the industry, Ms. Duggan helped shape and was instrumental in
+                  crafting and reviewing the Real Estate Agents and Brokers Bill &mdash;
+                  the regulatory framework that defines professional standards in Guyana today.
+                  14 years of real estate experience spanning commercial land acquisition,
+                  office space, retail, and industrial facilities.
+                </div>
+                <div className="speaker-bio-topic">
+                  &ldquo;Real Estate as a Service, Ethical Practices and Compliance&rdquo;
+                </div>
+              </div>
               <div className="speaker-photo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -1098,15 +1181,27 @@ export default function RealEstateRisingPage() {
                 />
               </div>
               <div className="speaker-info">
-                <div className="speaker-name">Nicola Duggan</div>
+                <div className="speaker-name">Nicola &ldquo;Nics&rdquo; Duggan</div>
                 <div className="speaker-role">
-                  CEO, Paradigm Logistics &amp; Management Services
+                  CEO, Paradigm Property Logistics &amp; Management<br/>
+                  Director, Guyana Association of Real Estate Professionals (GAREP)
                 </div>
-                <span className="speaker-badge">Industry Advocate</span>
+                <span className="speaker-badge">Keynote Speaker</span>
               </div>
             </div>
 
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">Legal Panel</div>
+                <div className="speaker-bio-text">
+                  Attorney-at-Law and Co-founder of Durant Property Management. Specialist
+                  in real estate law, buyer and agent protections, and property transactions
+                  in Guyana.
+                </div>
+                <div className="speaker-bio-topic">
+                  Bio update coming shortly.
+                </div>
+              </div>
               <div className="speaker-photo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -1124,6 +1219,16 @@ export default function RealEstateRisingPage() {
             </div>
 
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">Regulatory Session</div>
+                <div className="speaker-bio-text">
+                  Representative from the Guyana Revenue Authority covering licensing
+                  requirements, tax compliance, and agent obligations under current law.
+                </div>
+                <div className="speaker-bio-topic">
+                  Open floor &mdash; bring your compliance questions.
+                </div>
+              </div>
               <div className="speaker-photo" style={{ background: "#fff" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -1142,6 +1247,16 @@ export default function RealEstateRisingPage() {
             </div>
 
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">Agent Panel</div>
+                <div className="speaker-bio-text">
+                  Real estate professional with over 10 years of experience in the Guyanese
+                  market. Founder of the Training Future Real Estate Agents WhatsApp group.
+                </div>
+                <div className="speaker-bio-topic">
+                  The agent&apos;s perspective &mdash; what the market looks like on the ground.
+                </div>
+              </div>
               <div className="speaker-photo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -1159,6 +1274,22 @@ export default function RealEstateRisingPage() {
             </div>
 
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">&#9733; Just Added</div>
+                <div className="speaker-bio-text">
+                  Founder &amp; CEO of Guyana HomeHub &mdash; Guyana&apos;s first verified
+                  real estate search platform, live on iPhone &amp; Android. Born in the
+                  United States, Darren has deep personal ties to Guyana through his
+                  Guyanese wife and family. He built Guyana HomeHub to eliminate the
+                  WhatsApp and Facebook chaos that has defined property search in Guyana
+                  and replace it with verified listings, verified agents, and a platform
+                  built specifically for this market and the diaspora abroad.
+                </div>
+                <div className="speaker-bio-topic">
+                  Technology, digital listings, and where the rest of the world already is &mdash;
+                  and how Guyana gets there.
+                </div>
+              </div>
               <div className="speaker-photo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -1169,8 +1300,8 @@ export default function RealEstateRisingPage() {
               <div className="speaker-info">
                 <div className="speaker-name">Darren Buckner</div>
                 <div className="speaker-role">
-                  Founder &amp; CEO, Guyana HomeHub &mdash; Guyana&apos;s verified
-                  real estate platform, live on iPhone &amp; Android
+                  Founder &amp; CEO, Guyana HomeHub<br/>
+                  guyanahomehub.com &mdash; iPhone &amp; Android
                 </div>
                 <span className="speaker-badge" style={{ background: "rgba(240,192,64,0.15)", color: "#92400e" }}>
                   ★ Just Added
@@ -1179,6 +1310,16 @@ export default function RealEstateRisingPage() {
             </div>
 
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">Benefits Session</div>
+                <div className="speaker-bio-text">
+                  Representative from the National Insurance Scheme covering self-employed
+                  benefits, contribution obligations, and what agents are entitled to.
+                </div>
+                <div className="speaker-bio-topic">
+                  Know your benefits. Know your obligations.
+                </div>
+              </div>
               <div className="speaker-photo">
                 <span className="placeholder-icon">🏛️</span>
                 <span className="photo-hint">Awaiting confirmation</span>
@@ -1196,6 +1337,17 @@ export default function RealEstateRisingPage() {
             </div>
 
             <div className="speaker-card">
+              <div className="speaker-bio-overlay">
+                <div className="speaker-bio-title">Banking &amp; Financing</div>
+                <div className="speaker-bio-text">
+                  Banking institution representative covering mortgage products, client
+                  financing options, requirements for local and overseas buyers, and
+                  investment property financing.
+                </div>
+                <div className="speaker-bio-topic">
+                  How to get your clients financed and close more deals.
+                </div>
+              </div>
               <div className="speaker-photo">
                 <span className="placeholder-icon">🏦</span>
                 <span className="photo-hint">Awaiting confirmation</span>
