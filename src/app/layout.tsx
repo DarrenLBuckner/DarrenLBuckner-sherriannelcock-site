@@ -133,6 +133,12 @@ export default function RootLayout({
                 Events
               </a>
               <a
+                href="/press"
+                className="text-soft-text transition hover:text-emerald-primary"
+              >
+                Press
+              </a>
+              <a
                 href="https://www.guyanahomehub.com/agents/sherriann-elcock"
                 target="_blank"
                 rel="noopener noreferrer"
