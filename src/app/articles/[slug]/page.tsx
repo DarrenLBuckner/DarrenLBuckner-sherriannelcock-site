@@ -92,7 +92,12 @@ export default function ArticlePage({
     author: {
       "@type": "Person",
       name: "Sherriann Elcock",
+      jobTitle: "Founder, Prestigious Services & Realty 1262",
       url: "https://sherriannelcock.com",
+      sameAs: [
+        "https://www.youtube.com/@SherriannElcock",
+        "https://linkedin.com/in/sherriann-elcock",
+      ],
     },
     publisher: {
       "@type": "Organization",
